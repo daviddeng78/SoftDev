@@ -1,0 +1,14 @@
+Team Mykolyk Fan Club: Shafiul Haque, David Deng, April Li
+SoftDev pd08
+K12: Take and Give
+2022-10-17
+time spent: 0.3hrs
+
+Disco:
+- we need to ues "POST" method in the html template
+- request.forms.get() is an alternative tro request.args when using a POST method
+- the username and password don't appear in the url
+
+QCC:
+- why would people use a get request if a post request is more secure?
+- what is the real difference between the implementations of get and post?
