@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(63, 63, 63);
+}
+div {
+  background-color: gray;
+}
+
+.font {
+  font-family:comic sans ms;
+}
+.text {
+  color: white;
+  font-weight: bold;
+  font-family:comic sans ms;
+}
+.text2 {
+  color: black;
+  font-weight: bold;
+  font-family:comic sans ms;
+  font-size: 19px;
+}
+.text3 {
+  color: black;
+  font-weight: bold;
+  font-family:comic sans ms;
+  font-size: 30px;
+}
+.title {
+  color: white;
+  background-color: lightgray;
+  text-align: center;
+  font-family:comic sans ms;
+}
+.copyright {
+  text-align: right;
+  color: gray;
+  background-color: rgb(100, 100, 100);
+  font-size: medium;
+  font-weight: 5;
+  padding: 10px;
+}
+
+.column1 {
+  float: left;
+  width: 20%;
+  margin-left: 1rem
+}
+.column2 {
+  float: right;
+  width: 78%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
