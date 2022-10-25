@@ -12,18 +12,24 @@ DB_FILE="discobandit.db"
 db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
 c = db.cursor()               #facilitate db ops -- you will use cursor to trigger db events
 
+db.execute("DROP TABLE if exists courses")
 #==========================================================
-
 
 # < < < INSERT YOUR TEAM'S POPULATE-THE-DB CODE HERE > > >
-
-
-command = ""          # test SQL stmt in sqlite3 shell, save as string
-c.execute(command)    # run SQL statement
-
-#==========================================================
+c.execute("CREATE TABLE courses(code TEXT, mark INTEGER, id INTEGER)")
+        
+with open('courses.csv') as f:
+    reader = csv.DictReader(f, delimiter=',')
+    for row in reader:
+        c.execute(f"""INSERT INTO courses
+                    VALUES("{row['code']}", {row['mark']}, {row['id']})
+                """)
 
 db.commit() #save changes
-db.close()  #close database
+
+# c.execute(f""".open discobandit.db""")
+# c.execute("SELECT * from courses")
+db.close()
+#==========================================================
 
 
