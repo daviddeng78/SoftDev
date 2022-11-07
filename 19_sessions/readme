@@ -1,0 +1,13 @@
+# Team Mykolyk Fan Club: Shafiul Haque, David Deng, April Li
+# SoftDev pd08
+# K19: Sessions Greetings
+# 2022-11-04
+# time spent: 0.3hrs
+
+DISCO:
+- to create a cookie, invoke the comment session['username']
+- a cookie is cleaned when the browser is reloaded
+- session.pop is used to remove a cookie
+Q/C/C:
+How does a secret key function?
+What happens when you change the secret key?
