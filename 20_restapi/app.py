@@ -4,16 +4,21 @@
 # 2022-11-21
 # time spent: 0.3hrs
 
-from flask import Flask             #facilitate flask webserving
-from flask import render_template   #facilitate jinja templating
-from flask import request           #facilitate form submission
-from flask import session
+from flask import Flask, render_template
+from urllib import request
+import json
 
-app = Flask(__name__) 
+app = Flask(__name__)
+key = open("key_nasa.txt", "r").read()
 
 @app.route('/')
 def show():
-    return render_template('main.html', ) #if user isn't already logged in go to login page
+    # print(key)
+    url = request.urlopen(f"https://api.nasa.gov/planetary/apod?api_key={key}").read()
+    # print(url)
+    dict = json.loads(url)
+    # print(dict)
+    return render_template('main.html', picture=dict['url'], explanation=dict['explanation'], head = dict['title'])
 
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
