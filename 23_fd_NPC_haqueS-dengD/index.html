@@ -1,0 +1,202 @@
+<!--
+Team NPC: Shafiul Haque, David Deng
+SoftDev pd08
+K23: A Day of Noodling
+2022-11-28
+time spent: 1.2hrs
+-->
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+      <h1>Welcome to Team NPC!</h1>
+      <h4><strong>Devo 1: Shafiul Haque</strong></h4>
+      <h4><strong>Devo 2: David Deng</strong></h4>
+      <h6><a href="https://github.com/shafiulhaque/softdev/blob/main/23_fd_NPC_haqueS-dengD/index.html">take a peek at the code</a></h6>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x">
+    <div class="large-8 medium-8 cell">
+
+      <div class="row">
+        <h2>FEATURE: Form</h2>
+        With Foundation, forms are really easy to make! There's many different formats and options that you can have in a form:
+      </div>
+
+      <div class="row">
+        <div class="columns">
+          <form>
+            <br>
+            FILL IN THE BLANK OPTION: <b>use an input tag and type="text"</b>
+            <label><i>Put in thy name.</i>
+              <input type="text">
+            </label>
+            <br>
+
+            CHOOSE THE OPTION: <b>use the select tag</b>
+            <label><i>How tired are you today?</i>
+              <select><option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+                <option value="nine">9</option>
+                <option value="ten">10</option>
+              </select>
+            </label>
+            <br>
+
+            LONG ANSWER RESPONSE: <b>use textarea tag for the stretchable box</b>
+            <label>
+              <i>Is Mr. Mykolyk the greatest teacher ever? Write at least two sentences on your opinion. (25 points)</i>
+              <textarea></textarea>
+            </label>
+
+            MULTIPLE CHOICE!!: <b>use a fieldset to create columns, then use an input type="radio" tag for each answer choice. For checkboxes, the input type is "checkbox"</b><br>
+            <div class="row">
+              <i>How many holes are in a polo?</i>
+              <fieldset class="large-6 columns">
+                <input type="radio" value="1" id="choice1" required><label>1</label>
+                <input type="radio" value="2" id="choice2"><label>2</label>
+                <input type="radio" value="4" id="choice3"><label>4</label>
+              </fieldset>
+              <i>What world cups have you watched?</i>
+              <fieldset class="large-6 columns">
+                <input id="1" type="checkbox"><label for="checkbox1">2014</label>
+                <input id="2" type="checkbox"><label for="checkbox2">2018</label>
+                <input id="3" type="checkbox"><label for="checkbox3">2022 (now)</label>
+              </fieldset>
+            </div>
+
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Submit">
+            </div>
+
+          </form>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <h2>FEATURE: Grid Cells</h2>
+        In Foundation, grids are a great way to split up your work! In order to create a comprehensive grid, you must have a divider for the <b>grid-x grid-padding-x</b>, the <b>type of grid cell</b>, and a <b>primary callout</b>.
+      </div>
+      <br>
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="primary callout">
+            <p>This is a twelve cell section in a grid-x.
+            In this case, the class for the divider would be a large-12 cell.</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-6 medium-6 cell">
+          <div class="primary callout">
+            <p>Six cell: the class here is large-6 medium-6 cell.</p>
+          </div>
+        </div>
+        <div class="large-6 medium-6 cell">
+          <div class="primary callout">
+            <p>Another six cell :)</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-4 medium-4 small-4 cell">
+          <div class="primary callout">
+            <p>Four cell: the class here is large-4 medium-4 small-4 cell.</p>
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 cell">
+          <div class="primary callout">
+            <p>A four cell :0</p>
+          </div>
+        </div>
+        <div class="large-4 medium-4 small-4 cell">
+          <div class="primary callout">
+            <p>Another four cell :-)</p>
+          </div>
+        </div>
+      </div><br>
+
+  With grids, you're also able to choose how wide you want to make your text!<br><br>
+  <h5>Full Size Width: use the default <b>class="cell"</b></h5>
+    <div class="grid-x grid-padding-x">
+      <div class="cell">Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who was named Fédération Internationale de Football Association (FIFA) world player of the year six times (2009–12, 2015, and 2019). Messi started playing football as a boy and in 1995 joined the youth team of Newell’s Old Boys (a Rosario-based top-division football club). Messi’s phenomenal skills garnered the attention of prestigious clubs on both sides of the Atlantic. At age 13 Messi and his family relocated to Barcelona, and he began playing for FC Barcelona’s under-14 team. He scored 21 goals in 14 games for the junior team, and he quickly graduated through the higher-level teams until at age 16 he was given his informal debut with FC Barcelona in a friendly match.</div>
+    </div>
+    <br>
+    <h5>1/2 Size Width: use the <b>class="cell small-6"</b></h5>
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-6">Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who was named Fédération Internationale de Football Association (FIFA) world player of the year six times (2009–12, 2015, and 2019). Messi started playing football as a boy and in 1995 joined the youth team of Newell’s Old Boys (a Rosario-based top-division football club). Messi’s phenomenal skills garnered the attention of prestigious clubs on both sides of the Atlantic. At age 13 Messi and his family relocated to Barcelona, and he began playing for FC Barcelona’s under-14 team. He scored 21 goals in 14 games for the junior team, and he quickly graduated through the higher-level teams until at age 16 he was given his informal debut with FC Barcelona in a friendly match.</div>
+    </div>
+    <br>
+
+  In grids, you're also able to scroll through information in different ways:
+  <div class="grid-y small-grid-frame">
+    <h5>Horizontal Scroll: with text, use a <b>< p style="width:50vw;"></b></h5>
+      <div class="cell shrink header medium-cell-block-container">
+        <div class="grid-x grid-padding-x">
+          <div class="cell medium-5 medium-cell-block">
+            <p style="width:50vw;">Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who was named Fédération Internationale de Football Association (FIFA) world player of the year six times (2009–12, 2015, and 2019). Messi started playing football as a boy and in 1995 joined the youth team of Newell’s Old Boys (a Rosario-based top-division football club). Messi’s phenomenal skills garnered the attention of prestigious clubs on both sides of the Atlantic. At age 13 Messi and his family relocated to Barcelona, and he began playing for FC Barcelona’s under-14 team. He scored 21 goals in 14 games for the junior team, and he quickly graduated through the higher-level teams until at age 16 he was given his informal debut with FC Barcelona in a friendly match.</p>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <h5>Vertical Scroll: with text, use a <b>< p style="height:50vw;"></b></h5>
+      <div class="cell medium-auto medium-cell-block-container">
+        <div class="grid-x grid-padding-x">
+          <div class="cell medium-8 medium-cell-block-y">
+            <p style="height:50vw;">Lionel Messi, in full Lionel Andrés Messi, also called Leo Messi, (born June 24, 1987, Rosario, Argentina), Argentine-born football (soccer) player who was named Fédération Internationale de Football Association (FIFA) world player of the year six times (2009–12, 2015, and 2019). Messi started playing football as a boy and in 1995 joined the youth team of Newell’s Old Boys (a Rosario-based top-division football club). Messi’s phenomenal skills garnered the attention of prestigious clubs on both sides of the Atlantic. At age 13 Messi and his family relocated to Barcelona, and he began playing for FC Barcelona’s under-14 team. He scored 21 goals in 14 games for the junior team, and he quickly graduated through the higher-level teams until at age 16 he was given his informal debut with FC Barcelona in a friendly match.
+              <br><br>In the 2004–05 season Messi, then 17, became the youngest official player and goal scorer in the Spanish La Liga (the country’s highest division of football). Though only 5 feet 7 inches (1.7 metres) tall and weighing 148 pounds (67 kg), he was strong, well-balanced, and versatile on the field. Naturally left-footed, quick, and precise in control of the ball, Messi was a keen pass distributor and could readily thread his way through packed defenses. In 2005 he was granted Spanish citizenship, an honour greeted with mixed feelings by the fiercely Catalan supporters of Barcelona. The next year Messi and Barcelona won the Champions League (the European club championship) title.
+              <br><Br>Messi’s play continued to rapidly improve over the years, and by 2008 he was one of the most dominant players in the world, finishing second to Manchester United’s Cristiano Ronaldo in the voting for the 2008 FIFA World Player of the Year. In early 2009 Messi capped off a spectacular 2008–09 season by helping FC Barcelona capture the club’s first “treble” (winning three major European club titles in one season): the team won the La Liga championship, the Copa del Rey (Spain’s major domestic cup), and the Champions League title. He scored 38 goals in 51 matches during that season, and he bested Ronaldo in the balloting for FIFA World Player of the Year honours by a record margin. During the 2009–10 season Messi scored 34 goals in domestic games as Barcelona repeated as La Liga champions. He earned the Golden Shoe award as Europe’s leading scorer, and he was named the 2010 world player of the year (the award was renamed the FIFA Ballon d’Or that year).</p>
+          </div>
+        </div>
+      </div><br>
+
+  <div class="row">
+    <h2>FEATURE: Buttons</h2>
+    Buttons can be really helpful tools when you want to complete more traditional actions. Foundation has many ways to use certain styles styles that you can fit your needs with.
+  </div>
+  <br>
+  When <b>class="tiny button"</b>, we get...
+  <a class="tiny button">a tiny button</a><br>
+  When <b>class="small button"</b>, we get...
+  <a class="small button">a slightly bigger button</a><br>
+  When <b>class="large button"</b>, we get...
+  <a class="large button">a BIG BUTTON</a><br><br>
+
+  <div class="row">
+    <h2>FEATURE: Cards</h2>
+    Cards are a popular and flexible UI component in Foundation!<br>
+    - <b>class="card"</b> initiates the creation of a card<br>
+    - <b>class="card-divider"</b> divides it into two sections<br>
+    - <b>class="card-section"</b> allows you to write content in the card<br>
+  </div><br>
+    <div class="card" style="width:450px">
+      <div class="card-divider">
+        <h3><b>Le Machine by NPC</b></h3>
+      </div>
+      <div class="card-section">
+        <p>How do you become a soccer superstar, you may ask? Here are some components that are NECESSARY for becoming the best in the game.</p>
+      </div>
+      <img src="https://pbs.twimg.com/media/E4PdcubXIAURD8R.jpg:large">
+    </div>
+
+    </div>
+  </div>
+</body>
+</html>
