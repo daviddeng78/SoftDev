@@ -1,0 +1,14 @@
+Team NPC: Shafiul Haque, David Deng
+SoftDev pd08
+K20: A RESTful Journey Skyward
+2022-11-21
+time spent: 0.3hrs
+
+DISCO:
+- you have to import json and use request from urllib, which opens the URL
+- the key is used to parse into the string of the url
+- json.loads() shows the dictionary made by the API
+
+QCC:
+- how does json translate the information from the url?
+- what is the difference between the url and when json loads it?
