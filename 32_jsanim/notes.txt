@@ -1,0 +1,10 @@
+Infinite Synergy: Yat Long Chan, David Deng
+SoftDev pd8
+K32 -- screensaver in canvas JS
+2023-04-27r
+
+DISCO:
+imagemagick very cool. Shows dimensions of jpg.
+
+QCC:
+why preventDefault()?
